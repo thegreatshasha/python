@@ -28,10 +28,10 @@ br.open('http://bigbasket.com/product/page/10')
 
 # Common data
 product_urls = []
-total = 1 +1
+total = input('enter no of pages you want to scrape[1-694]')
 
-for i in range(1, total):
-	print("parsing page %s out of %s" % (i, total - 1))
+for i in range(1, total + 1):
+	print("parsing page %s out of %s" % (i, total))
 	url = 'http://bigbasket.com/product/page/' + str(i)
 	
 	br.open(url)
